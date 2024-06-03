@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/abab4704cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.jpg" class="logo"/>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-caret-right"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Webdeveloper</p>
+                <h1>Hi, I'm <span>Mohamed</span> Khalid</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/aboutimg.jpg" alt=""/>
+                </div>
+                <div class="col2">
+                    <h2 class="about-title" id="about">About me!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo,<br>
+                         libero obcaecati fugit ratione soluta repellendus. Tenetur autem,<br>
+                          molestias impedit maiores minima ipsa alias, illo id, error culpa quas ea!</p>
+                          <div class="tab-titles">
+                            <p class="title-name active Skills">Skills</p>
+                            <p class="title-name Experience">Experience</p>
+                            <p class="title-name Education">Education</p>
+                          </div>
+                          <div class="title-info active-tab Skills1">
+                            <ul>
+                                <li><span>Programming fundmentals</span><br>variables, functions, datastructure</li>
+                                <li><span>OOP</span><br>Class, Abstraction, Encapsulation, Inheritance, Polymorphism.</li>
+                                <li><span>Frontend Webdeveloper</span><br>Html, css, bootstrap, javascript ,jQuery</li>
+                            </ul>
+                          </div>
+                          <div class="title-info Experience1">
+                            <ul>
+                                <li><span>50% 2024</span><br>The Complete 2024 Webdevelopment Bootcamp</li>
+                                <li><span>Completed 2020</span><br>Professional Front-End Web Development from udacity</li>
+                            
+                            </ul>
+                          </div>
+                          <div class="title-info Education1">
+                            <ul>
+                                <li><span>Helwan university</span><br>Excellent degree in Computer science</li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="work">
+        <div class="container">
+            <h2 class="about-title">My work</h2>
+            <div class="work-list">
+                <div class="project">
+                    <img src="images/portfolio.png" alt="">
+                    <div>
+                    <h3>portfolio web page</h3>
+                    <p>this is my portfolio , Responsive webpage that contains all my info and projects</p>
+                    <a href="https://midos189.github.io/portfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/weather.png" alt="">
+                    <div>
+                        <h3>Weatherapp webpage</h3>
+                        <p>Stylish weatherapp where it takes the name of the city and return the current
+                            weather status by the use of openweathermap api
+                        </p>
+                        <a href="https://midos189.github.io/weatherapp/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">   
+                    <img src="images/simon.png" alt="">
+                    <div>
+                        <h3>Simon game challenge</h3>
+                        <p>interactive game that depends on strong memorizing skills.</p>
+                        <a href="https://midos189.github.io/simonGame/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------Contact me-------->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-style">
+                <h2 class="about-title">Contact Me</h2>
+                <p><i class="fa-solid fa-envelope"></i>  midokitkat49.mk@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 01140491774</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/mido.khaled.5437/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/m7md_khds/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mohamed-khaled-63b487242/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+$(".title-name").click(function(event){
+        $(".title-name").removeClass("active");
+        $(".title-info").removeClass("active-tab");
+    $("."+this.innerText).addClass("active");
+    $("."+this.innerText+"1").addClass("active-tab");
+});
+$(".fa-bars").click(function(){
+    $("ul").css("right","0");
+})
+$(".fa-caret-right").click(function(){
+    $("ul").css("right","-200px");
+})

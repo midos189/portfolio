@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+    
+}
+#header{
+    background-color: black;
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color:red;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+}
+.col2{
+    flex-basis: 60%;
+}
+.about-title{
+    font-size: 60px;
+    font-weight: 600;
+    margin:20px 0;
+}
+.tab-titles{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-name{
+    position: relative;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+.title-name::after{
+    position: absolute;
+    content: '';
+    width:0;
+    background: #ff004f;
+    height: 3px;
+    bottom:-8px;
+    left: 0;
+    transition: 0.5s;
+}
+.active::after{
+    width: 50%;
+}
+.title-info ul{
+    list-style: none;
+}
+.title-info ul li{
+    margin:20px;
+}
+.title-info ul li span{
+    color:red;
+}
+.title-info{
+    display: none;
+}
+.active-tab{
+    display: block;
+}
+#work{
+    padding: 30px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+}
+.project{
+    position: relative;
+    transition: transform 0.5s;
+}
+.project div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: height 0.5s;
+}
+.project img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+.project div h3{
+    margin: 10px auto;
+}
+.project:hover div{
+    height: 100%;
+}
+.project:hover{
+    transform: scale(1.1);
+}
+.project div a{
+    margin:20px auto;
+    color: #ff004f;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.social{
+    margin-left: 20px;
+    transition: transform 0.5s;
+}
+#contact p{
+    margin-bottom: 10px;
+}
+.social a{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 30px;
+    
+}
+.social a:hover{
+    transform: translateY(-5px);
+    color: #ff004f;
+}
+nav .fa-solid{
+    display: none;
+}
+@media (max-width:600px) {
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    } 
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 20px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+    .row{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .col1,.col2{
+        flex-basis: 100%;
+    }
+    .col2 .title-name{
+        margin: 10px 10px;
+    }
+    .about-title{
+        font-size: 30px;
+    }
+
+}
